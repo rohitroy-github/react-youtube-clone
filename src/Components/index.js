@@ -10,4 +10,7 @@ export { default as SearchFeed } from './SearchFeed';
 
 export { default as ChannelDetail } from './ChannelDetail'; 
 
+export { default as SearchBar } from './SearchBar.jsx'; 
+
+
 

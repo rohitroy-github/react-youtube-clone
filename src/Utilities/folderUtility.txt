@@ -1,0 +1,1 @@
+Utilities folder contains all the files we will be needing across all the pages of the project.
