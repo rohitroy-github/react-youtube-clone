@@ -1,1 +1,1 @@
-Components will be having all the independent functional components of the project defined.  
+Components folder will be having all the independent functional components defined for the project.  
