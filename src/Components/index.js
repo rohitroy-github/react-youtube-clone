@@ -1,4 +1,4 @@
-//Common file for exporting all the different componenrts 
+//Common index file for exporting all the different componenrts in various parts of the project 
 
 export { default as Navbar } from './Navbar'; 
 
@@ -12,5 +12,4 @@ export { default as ChannelDetail } from './ChannelDetail';
 
 export { default as SearchBar } from './SearchBar.jsx'; 
 
-
-
+export { default as Sidebar } from './Sidebar.jsx'; 
