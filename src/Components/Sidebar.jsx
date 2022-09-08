@@ -38,7 +38,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
             style={{
               // Conditional styling
               color: category.name === selectedCategory ? "white" : "red",
-              marginRight: "15px",
+              marginRight: "20px",
             }}
           >
             {category.icon}
