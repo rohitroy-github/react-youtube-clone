@@ -62,15 +62,21 @@ const VideoDetail = () => {
               </Link>
               <Stack direction="row" gap="20px" alignItems="center">
                 <Typography variant="body1" sx={{ opacity: 0.7 }}>
+
+                  {/* Converting long numbers to readable form */}
                   {parseInt(viewCount).toLocaleString()} views
                 </Typography>
                 <Typography variant="body1" sx={{ opacity: 0.7 }}>
+
+                  {/* Converting long numbers to readable form */}
                   {parseInt(likeCount).toLocaleString()} likes
                 </Typography>
               </Stack>
             </Stack>
           </Box>
         </Box>
+
+        {/* SideVideoBar Box Code*/}
         <Box
           px={2}
           py={{ md: 1, xs: 5 }}
