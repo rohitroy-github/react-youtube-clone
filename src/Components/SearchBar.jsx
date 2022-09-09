@@ -3,8 +3,8 @@
 import React from "react";
 
 //Importing Hooks
-// import { useNavigate } from "react-router-dom";
-// import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 //Importing some MUI Components
 import { Paper, IconButton } from "@mui/material";
@@ -13,10 +13,31 @@ import { Paper, IconButton } from "@mui/material";
 import { Search } from "@mui/icons-material";
 
 const SearchBar = () => {
+
+  //SearchTerm modification
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const navigate = useNavigate(); 
+
+  //Submit function
+  const handleSubmit = (e) => { 
+
+    //Preventing defalut reload feature
+    e.preventDefault(); 
+
+    //if SearchTerm available ? 
+    if(searchTerm){ 
+      navigate(`/search/${searchTerm}`); 
+
+      // Setting seachTerm feild to empty string after search
+      setSearchTerm('');
+    }
+  }
+
   return (
     <Paper
       component="form"
-      onSubmit={() => {}}
+      onSubmit={handleSubmit}
       sx={{
         borderRadius: 20,
         border: "1px solid #e3e3e3",
@@ -33,8 +54,8 @@ const SearchBar = () => {
       <input
         className="search-bar"
         placeholder="Search ..."
-        value=""
-        onChange={() => {}}
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
       />
 
       {/* MUI Icon Button */}
