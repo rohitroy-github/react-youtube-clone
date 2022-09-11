@@ -2,6 +2,10 @@ This is a <b>React Application/ Project</b>attempt to clone <a href="https://www
 
 This project is still under development </>
 
+<b>It looks like this for now ></b>
+
+![image](https://user-images.githubusercontent.com/68563695/189517297-777899f1-2abd-462d-9848-65d098bec292.png)
+
 <b>Installation Guidelines On Local Machine >>></b>
 
 <ul> 
